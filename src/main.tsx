@@ -1,14 +1,10 @@
-import {Fragment, StrictMode} from 'react'
+import {StrictMode} from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import {Footer} from "./Footer.tsx";
-import {Header} from "./Header.tsx";
+import App from "./App.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <Fragment>
-          <Header />
-          <Footer/>
-      </Fragment>
+      <App/>
   </StrictMode>,
 )
